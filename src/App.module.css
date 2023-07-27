@@ -1,0 +1,66 @@
+.buttonLine{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    width: 1190px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(162,156,156,0.5);
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(162,156,156,0.5);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(162,156,156,0.5);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton{
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.scatterCard{
+    width: 600px;
+    padding: 20px;
+
+  }
+
+.dataDisplaySection{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.caseControlDisplay{
+    padding: 20px;
+}
+
+.caseControlPopulations{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.populationLogo{
+    height: 70px;
+}
+
+.populationItem{
+      display: flex;
+
+  }
+
+.helperText{
+    font-size: 15px;
+    background-color:#e0e0e0;
+    margin: 10px;
+}
+

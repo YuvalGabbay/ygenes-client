@@ -1,10 +1,11 @@
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Disease } from "./types";
+import "./DiseasePicker.css";
 
 type Props = {
   onDiseaseChange: (event: any) => void;
-  selectedDisease: string;
+  selectedDisease: number;
 };
 
 export function DiseasePicker({ onDiseaseChange, selectedDisease }: Props) {
@@ -22,7 +23,8 @@ export function DiseasePicker({ onDiseaseChange, selectedDisease }: Props) {
   }, []);
 
   return (
-    <div>
+    <div className={"diseasePicker"}>
+      <div className={"label"}>Disease</div>
       <ToggleButtonGroup
         color="primary"
         value={selectedDisease}
@@ -31,7 +33,7 @@ export function DiseasePicker({ onDiseaseChange, selectedDisease }: Props) {
         aria-label="Platform"
       >
         {diseases.map((disease) => (
-          <ToggleButton value={disease.disease_name}>
+          <ToggleButton key={disease.disease_name} value={disease.disease_id}>
             {disease.disease_name}
           </ToggleButton>
         ))}

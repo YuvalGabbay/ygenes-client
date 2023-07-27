@@ -1,0 +1,9 @@
+.diseasePicker{
+    width: 300px;
+}
+
+.label{
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 3px;
+}

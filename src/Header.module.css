@@ -1,0 +1,10 @@
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.toolBarButtons{
+    display: flex;
+    gap: 40px;
+
+}
