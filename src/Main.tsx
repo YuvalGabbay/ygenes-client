@@ -1,13 +1,13 @@
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import About from "./About";
 import { Header } from "./Header";
 import { theme } from "./utils";
 import { ThemeProvider } from "@mui/material";
 import Presentation from "./Presentation";
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/*",
     element: <App />,
   },
   {
