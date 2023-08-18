@@ -14,6 +14,7 @@ import { buildDataForChart, getPopulatiomImage, theme } from "./utils";
 import { getDatasetAtEvent, getElementAtEvent, Scatter } from "react-chartjs-2";
 import { CaseControl } from "./types";
 import { Help } from "@mui/icons-material";
+import enricherLogo from "./images/EnricherKG_logo.png";
 
 ChartJS.register(LinearScale, PointElement, LineElement, Legend);
 
@@ -145,6 +146,17 @@ function App() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div>
+              <p className={styles.titleEnricher}>
+                <b>
+                  Connect genes to cells, tissues and diseases using
+                  Enricher-KG:
+                </b>
+              </p>
+              <a href={`https://maayanlab.cloud/enrichr-kg`}>
+                <img className={styles.enricherLogo} src={enricherLogo} />
+              </a>
             </div>
           </Card>
         )}

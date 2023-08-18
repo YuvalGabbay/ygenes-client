@@ -17,10 +17,10 @@ function About() {
         is essential for developing targeted and personalized healthcare
         solutions.
         <p>
-          We used Genome-Wide Association Studies (GWAS) to identify potential
-          genes that may influence specific diseases. Our approach involves
-          analyzing allele frequencies of variants within these genes. Using a
-          unique formula developed by us, we pinpoint genes that exhibit
+          We used coding Genome-Wide Association Studies (GWAS) to identify
+          potential genes that may influence specific diseases. Our approach
+          involves analyzing allele frequencies of variants within these genes.
+          Using a unique formula developed by us, we pinpoint genes that exhibit
           significant changes in allele frequencies, shedding light on their
           potential role in disease prevalence across diverse populations.
         </p>
