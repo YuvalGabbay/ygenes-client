@@ -15,6 +15,7 @@ import { getDatasetAtEvent, getElementAtEvent, Scatter } from "react-chartjs-2";
 import { CaseControl } from "./types";
 import { Help } from "@mui/icons-material";
 import enricherLogo from "./images/EnricherKG_logo.png";
+import { Link } from "react-router-dom";
 
 ChartJS.register(LinearScale, PointElement, LineElement, Legend);
 
@@ -154,9 +155,9 @@ function App() {
                   Enricher-KG:
                 </b>
               </p>
-              <a href={`https://maayanlab.cloud/enrichr-kg`}>
+              <Link to={`https://maayanlab.cloud/enrichr-kg`}>
                 <img className={styles.enricherLogo} src={enricherLogo} />
-              </a>
+              </Link>
             </div>
           </Card>
         )}

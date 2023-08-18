@@ -13,17 +13,7 @@ function About() {
         width="800px"
         height="500px"
         frameBorder="0"
-      >
-        זהו פריט מצגת מוטבע של{" "}
-        <a target="_blank" href="https://office.com">
-          Microsoft Office
-        </a>
-        , המופעל באמצעות{" "}
-        <a target="_blank" href="https://office.com/webapps">
-          Office
-        </a>
-        .
-      </iframe>
+      />
     </div>
   );
 }
