@@ -73,6 +73,8 @@ function App() {
       });
   }
 
+  console.log("new!");
+
   return (
     <div>
       <Header />
