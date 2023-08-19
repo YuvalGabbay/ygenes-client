@@ -2,6 +2,7 @@ import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Disease } from "./types";
 import "./DiseasePicker.css";
+import { SERVER_URL } from "./constants";
 
 type Props = {
   onDiseaseChange: (event: any) => void;
@@ -12,7 +13,7 @@ export function DiseasePicker({ onDiseaseChange, selectedDisease }: Props) {
   // save disease list
   const [diseases, setDiseases] = useState<Disease[]>([]);
   useEffect(() => {
-    fetch("https://elnasi.com:3020/diseases/list")
+    fetch(`${SERVER_URL}/diseases/list`)
       .then((res) => res.json())
       .then((data) => {
         setDiseases(data);
