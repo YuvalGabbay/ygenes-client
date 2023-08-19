@@ -17,6 +17,7 @@ import { Help } from "@mui/icons-material";
 import enricherLogo from "./images/EnricherKG_logo.png";
 import { Link } from "react-router-dom";
 import { Header } from "./Header";
+import { SERVER_URL } from "./constants";
 
 ChartJS.register(LinearScale, PointElement, LineElement, Legend);
 
@@ -59,7 +60,7 @@ function App() {
 
   function fetchGeneData(selectedDisease: number, selectedPopulation: number) {
     fetch(
-      `http://localhost:3000/genes/gene-distances?diseaseId=${selectedDisease}&populationKey=${selectedPopulation}`
+      `${SERVER_URL}/genes/gene-distances?diseaseId=${selectedDisease}&populationKey=${selectedPopulation}`
     )
       .then((res) => res.json())
       .then((data) => {

@@ -12,7 +12,7 @@ export function DiseasePicker({ onDiseaseChange, selectedDisease }: Props) {
   // save disease list
   const [diseases, setDiseases] = useState<Disease[]>([]);
   useEffect(() => {
-    fetch("http://localhost:3000/diseases/list")
+    fetch("https://elnasi.com:3020/diseases/list")
       .then((res) => res.json())
       .then((data) => {
         setDiseases(data);

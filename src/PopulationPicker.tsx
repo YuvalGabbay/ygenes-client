@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { formatPopulation } from "./utils";
 import { Population } from "./types";
 import "./PopulationPicker.css";
+import { SERVER_URL } from "./constants";
 
 type Props = {
   onPopulationChange: (event: any) => void;
@@ -16,7 +17,7 @@ export function PopulationPicker({
   // save population list
   const [populations, setPopulations] = useState<Population[]>([]);
   useEffect(() => {
-    fetch("http://localhost:3000/populations/population-type")
+    fetch(`${SERVER_URL}/populations/population-type`)
       .then((res) => res.json())
       .then((data) => {
         formatPopulation(data);

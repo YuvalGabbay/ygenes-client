@@ -1,7 +1,6 @@
-import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 import styles from "./Header.module.css";
 import OriGene2DLogo from "./images/OriGene2D_logo.png";
-import enricherLogo from "./images/EnricherKG_logo.png";
 import { Link } from "react-router-dom";
 
 export function Header() {
