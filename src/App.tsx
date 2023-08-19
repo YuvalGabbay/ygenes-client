@@ -10,12 +10,13 @@ import {
   LineElement,
   Legend,
 } from "chart.js";
-import { buildDataForChart, getPopulatiomImage, theme } from "./utils";
-import { getDatasetAtEvent, getElementAtEvent, Scatter } from "react-chartjs-2";
+import { buildDataForChart, getPopulatiomImage } from "./utils";
+import { getElementAtEvent, Scatter } from "react-chartjs-2";
 import { CaseControl } from "./types";
 import { Help } from "@mui/icons-material";
 import enricherLogo from "./images/EnricherKG_logo.png";
 import { Link } from "react-router-dom";
+import { Header } from "./Header";
 
 ChartJS.register(LinearScale, PointElement, LineElement, Legend);
 
@@ -74,6 +75,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <div className={styles.container}>
         <section className={styles.buttonLine}>
           <div>
