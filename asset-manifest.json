@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ygenes-client/static/css/main.72fd00c1.css",
-    "main.js": "/ygenes-client/static/js/main.a9f86ca3.js",
+    "main.js": "/ygenes-client/static/js/main.09256c4c.js",
     "static/js/787.fa58d89a.chunk.js": "/ygenes-client/static/js/787.fa58d89a.chunk.js",
     "static/media/african.png": "/ygenes-client/static/media/african.f4567759caa88a56a5fc.png",
     "static/media/asian.png": "/ygenes-client/static/media/asian.892654958d36e8096fe7.png",
@@ -66,11 +66,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/ygenes-client/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/ygenes-client/index.html",
     "main.72fd00c1.css.map": "/ygenes-client/static/css/main.72fd00c1.css.map",
-    "main.a9f86ca3.js.map": "/ygenes-client/static/js/main.a9f86ca3.js.map",
+    "main.09256c4c.js.map": "/ygenes-client/static/js/main.09256c4c.js.map",
     "787.fa58d89a.chunk.js.map": "/ygenes-client/static/js/787.fa58d89a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72fd00c1.css",
-    "static/js/main.a9f86ca3.js"
+    "static/js/main.09256c4c.js"
   ]
 }
